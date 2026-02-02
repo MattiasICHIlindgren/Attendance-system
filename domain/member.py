@@ -1,10 +1,10 @@
 from datetime import date
 
 class Member: 
-    def __init__(self,id,name,membership_expires_at):
+    def __init__(self,id,name,is_member):
         self.id = id
         self.name = name 
-        self.membership_expires_at = membership_expires_at
+        self.is_member = is_member
     
-    def is_membership_active(self):
-        return self.membership_expires_at >= date.today()
+    def is_membership_active(self) -> bool:
+        return self.is_member 
