@@ -1,7 +1,7 @@
 # Attendance-system
 A small project I'll be working on together with my union group. 
 
-Designed and implemented a membership and attendance system using Clean Architecture principles. 
+Designed and implemented a membership/attendance system using Clean Architecture principles. 
 Focused on domain-driven design, business rules enforcement, and layered architecture in Python.
 
 
