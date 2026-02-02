@@ -2,7 +2,9 @@ from datetime import date
 
 class Member: 
     def __init__(self,id,name,membership_expires_at):
-        pass
+        self.id = id
+        self.name = name 
+        self.membership_expires_at = membership_expires_at
     
     def is_membership_active(self):
-        pass
+        return self.membership_expires_at >= date.today()
