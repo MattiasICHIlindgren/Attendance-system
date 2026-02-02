@@ -1,9 +1,8 @@
 # Attendance-system
 A small project I'll be working on together with my union group. 
-This application will feature a toggle like attendance system to keep track of memberships for the members in our union group
 
-The goal of this application is to mark attendances of the members and keep track of their membership : if the membership fee has been paid etc 
-The data will be storedin a simple mySQL database. 
+Designed and implemented a membership and attendance system using Clean Architecture principles. 
+Focused on domain-driven design, business rules enforcement, and layered architecture in Python.
 
 
 The application is using clean architecture.
