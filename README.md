@@ -12,32 +12,31 @@ attendance_app/
 ├── domain/
 │   ├── entities/
 │   │   ├── member.py
-│   │   └── attendance.py               *Entity
-│   │
+│   │   └── attendance.py
 │   └── value_objects/
 │       └── membership_status.py
 │
 ├── use_cases/
 │   ├── mark_attendance.py
-│   ├── register_member.py              *Business logic 
+│   ├── register_member.py
 │   └── pay_membership_fee.py
 │
 ├── interfaces/
 │   └── repositories/
-│       ├── member_repository.py        
+│       ├── member_repository.py
 │       └── attendance_repository.py
 │
 ├── infrastructure/
-│   └── mysql/                          
-│       ├── member_repo_mysql.py        *Data Storage 
+│   └── mysql/
+│       ├── member_repo_mysql.py
 │       └── attendance_repo_mysql.py
 │
 ├── web/
-│   ├── app.py                          *Flask app
+│   ├── app.py
 │   └── templates/
 │       └── index.html
 │
-└── config/
-│    └── database.py
+├── config/
+│   └── database.py
 │
-└── main.py 
+└── main.py
