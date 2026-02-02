@@ -11,10 +11,8 @@ attendance_app/
 │
 ├── domain/
 │   ├── entities/
-│   │   ├── member.py
-│   │   └── attendance.py
-│   └── value_objects/
-│       └── membership_status.py
+│       ├── member.py
+│       └── attendance.py
 │
 ├── use_cases/
 │   ├── mark_attendance.py
