@@ -1,15 +1,8 @@
 class Attendance: 
-    def __init__(self):
-        self.records = {}
-    
-    def mark(self,name,date):
-        self.records.setdefault(name, []).append(date)
-    
-    def unmark(self,name,date): 
-        if name in self.records and date in self.records[name]: 
-            self.records[name].remove(date)
-    
-    def is_present(self,name,date):
-        return name in self.records and date in self.records[name]
-    
+    def __init__(self,member_id,date):
+        self.member_id = member_id 
+        self.date = date 
+        
+        
+
     
