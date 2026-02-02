@@ -10,4 +10,6 @@ class Attendance:
             self.records[name].remove(date)
     
     def is_present(self,name,date):
-        pass 
+        return name in self.records and date in self.records[name]
+    
+    
