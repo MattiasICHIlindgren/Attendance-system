@@ -1,12 +1,15 @@
 class Attendance: 
     def __init__(self):
-        pass
+        self.records = {}
     
     def mark(self,name,date):
-        pass
+        self.records.setdefault(name, []).append(date)
     
     def unmark(self,name,date): 
-        pass 
+        if name in self.records and date in self.records[name]: 
+            self.records[name].remove(date)
     
     def is_present(self,name,date):
-        pass 
+        return name in self.records and date in self.records[name]
+    
+    
