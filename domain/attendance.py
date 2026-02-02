@@ -6,7 +6,8 @@ class Attendance:
         self.records.setdefault(name, []).append(date)
     
     def unmark(self,name,date): 
-        pass 
+        if name in self.records and date in self.records[name]: 
+            self.records[name].remove(date)
     
     def is_present(self,name,date):
         pass 
