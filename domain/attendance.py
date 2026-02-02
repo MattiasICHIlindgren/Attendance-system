@@ -1,6 +1,6 @@
 class Attendance: 
     def __init__(self):
-        pass
+        self.records = {}
     
     def mark(self,name,date):
         pass
