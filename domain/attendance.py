@@ -3,7 +3,7 @@ class Attendance:
         self.records = {}
     
     def mark(self,name,date):
-        pass
+        self.records.setdefault(name, []).append(date)
     
     def unmark(self,name,date): 
         pass 
