@@ -7,5 +7,9 @@ class MemberRepositoryMySQL(MemberRepository):
         
     def get_by_id(self, member_id):
         return self._members.get(member_id)
+    
+    def get_all(self): 
+        return list(self._members.values())
+    
         
         
