@@ -12,3 +12,14 @@ class MarkAttendance:
     ):
         self.member_repo = member_repo 
         self.attendance_repo = attendance_repo 
+        
+    def check_member(self, member_id: int):
+        member = self.member_repo.get_active_member_by_id(member_id)
+        
+        if not member:
+            raise PermissionError("Access denied: not an active member")
+        
+        attendance = Attendance(member_id, date.today()) 
+        self.attendance_repo.save(attendance)
+        
+        return attendance
