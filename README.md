@@ -9,22 +9,20 @@ The application is using clean architecture.
 
 attendance_app/
 │
-├── domain/│   
-│       ├── member.py
+├── domain/   
+│       ├── member.py                           *entities
 │       └── attendance.py
 │
 ├── use_cases/
-│   ├── mark_attendance.py
+│   ├── mark_attendance.py                      *Application
 │   ├── register_member.py
 │   └── pay_membership_fee.py
 │
-├── interfaces/
-│   └── repositories/
+├── interfaces/                                 *repositories
 │       ├── member_repository.py
 │       └── attendance_repository.py
 │
-├── infrastructure/
-│   └── mysql/
+├── infrastructure/                             *data storage  
 │       ├── member_repo_mysql.py
 │       └── attendance_repo_mysql.py
 │
