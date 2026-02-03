@@ -1,8 +1,8 @@
 from datetime import date
 
 class Member: 
-    def __init__(self,id,name,is_member):
-        self.id = id
+    def __init__(self,member_id: int,name: str,is_member: bool):
+        self.member_id = member_id
         self.name = name 
         self.is_member = is_member
     
