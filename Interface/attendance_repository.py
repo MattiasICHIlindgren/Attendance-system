@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod 
-from datetime import date
+from domain.attendance import Attendance
 
 class AttendanceRepository(ABC):
     @abstractmethod
-    def mark(self,member_id,attendance_date: date):
+    def save(self,attendace: Attendance) -> None:
         pass 
     
     @abstractmethod
-    def get_dates_for_member(self,member_id):
+    def get_by_member_id(self,member_id: int) -> list[Attendance]:
         pass 
