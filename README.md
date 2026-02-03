@@ -9,8 +9,7 @@ The application is using clean architecture.
 
 attendance_app/
 │
-├── domain/
-│   ├── entities/
+├── domain/│   
 │       ├── member.py
 │       └── attendance.py
 │
